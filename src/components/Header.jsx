@@ -15,7 +15,7 @@ export default function Header() {
           </Link>
           <ul>
             <li>
-              <Link className="header-nav-item" to="/movie">
+              <Link className="header-nav-item" to="/movies">
                 영화
               </Link>
             </li>
