@@ -11,7 +11,7 @@
 .header-container {
   background-color: rgba(3, 37, 65, 1);
   /* background-color: #314d79; */
-  padding: 0 82px; /* 로그인영역 추가로 인해 헤더 양끝 패딩 */
+  padding: 0 82px; /* 로그인영역 추가로 인해 헤더 양끝 패딩 값*/
 }
 
 .header-wrap {
