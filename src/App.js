@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 // import { data } from "./movieData";
@@ -14,7 +14,7 @@ import Tv from "./pages/Tv";
 function App() {
   return (
     <div className="root-wrap">
-      <BrowserRouter>
+      <>
         <Header />
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
@@ -29,7 +29,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<Join />} />
         </Routes>
-      </BrowserRouter>
+      </>
     </div>
   );
 }
