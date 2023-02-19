@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "reset.css";
+
+.root-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 헤더 시작 */
+.header-container {
+  background-color: rgba(3, 37, 65, 1);
+  /* background-color: #314d79; */
+  padding: 0 82px; /* 로그인영역 추가로 인해 헤더 양끝 패딩 */
+}
+
+.header-wrap {
+  height: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between; /*로그인 추가로 인해 정렬추가*/
+  align-items: center;
+}
+
+.header-left-wrap {
+  display: flex;
+}
+
+.header-left-wrap ul {
+  display: flex;
+  margin-left: 16px;
+}
+
+.header-left-wrap li {
+  margin-right: 14px;
+  padding: 8px;
+}
+
+.header-right-wrap {
+  display: flex;
+}
+.header-right-wrap ul {
+  display: flex;
+}
+
+.header-right-wrap li {
+  margin-right: 14px;
+  padding: 8px;
+}
+.header-nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* body {
+  background-color: #0b224c;
+} */
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.movie-container {
+  width: 250px;
+  margin: 15px;
+  background-color: #314d79;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0.1);
+}
+
+.movie-container img {
+  max-width: 100%;
+  height: 380px;
+}
+
+.movie-info {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-info h4 {
+  margin: 0;
+}
+
+.movie-info span {
+  margin-left: 5px;
+}
+
+.overview-text {
+  margin: 10px;
 }
